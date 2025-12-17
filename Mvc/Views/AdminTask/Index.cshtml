@@ -1,0 +1,399 @@
+@model List<Repositories.Models.t_taskaccurarcy>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    #grid {
+        flex-grow: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .full-bleed {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .k-drawer-container {
+        height: calc(100vh - 120px);
+        max-height: calc(100vh - 120px);
+    }
+
+    .k-drawer-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .appbar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+    }
+
+    .hamburger {
+        margin-left: 0;
+        border: 0;
+        background: #facc15;
+        /* yellow */
+        color: #111;
+        /* dark text */
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .hamburger:hover {
+        background: #eab308;
+        /* darker yellow */
+    }
+
+    .k-drawer-items .k-drawer-item.k-selected {
+        background: #facc15;
+        /* yellow */
+        color: #111;
+    }
+
+    .k-drawer-items .k-drawer-item.k-selected .k-icon {
+        color: #111;
+    }
+
+    .k-drawer-items .k-drawer-item .k-icon {
+        margin-right: 10px;
+    }
+
+    .k-drawer-items .k-drawer-item .k-item-text {
+        white-space: nowrap;
+    }
+
+    #detailsWindow .chart-container {
+        display: flex;
+        justify-content: center;
+        /* center horizontally */
+        gap: 50px;
+        /* space between charts */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .chart-box {
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<div class="full-bleed">
+    <div class="k-drawer-container" id="shell" style="display:flex; gap:20px;">
+        <div id="drawer"></div>
+        <div id="grid"></div>
+            <div id="changepwd-section" style="display:none; max-width:400px;">
+                    <form id="changepwd-form">
+                        <div class="form-group mb-2 password-group">
+                            <label>Old Password</label>
+                            <input type="password" name="OldPassword" class="form-control" required />
+                            <i class="fa fa-eye password-toggle" data-target="OldPassword"></i>
+                        </div>
+                        <div class="form-group mb-2 password-group">
+                            <label>New Password</label>
+                            <input type="password" name="NewPassword" class="form-control" required minlength="4"
+                                pattern="^(?=.*\d).{4,}$" title="Must be at least 4 characters and include a number" />
+                            <i class="fa fa-eye password-toggle" data-target="NewPassword"></i>
+                        </div>
+                        <div class="form-group mb-2 password-group">
+                            <label>Confirm Password</label>
+                            <input type="password" name="ConfirmPassword" class="form-control" required />
+                            <i class="fa fa-eye password-toggle" data-target="ConfirmPassword"></i>
+                        </div>
+                        <button type="submit" class="btn btn-danger mt-2">Change Password</button>
+                    </form>
+                </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="detailsWindow" style="display:none;">
+</div>
+@section Scripts {
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        // -------- Drawer --------
+        var drawer = $("#drawer").kendoDrawer({
+            mode: "push",
+            position: "left",
+            mini: true,
+            width: 220,
+            template:
+                "<ul class='k-drawer-items'>" +
+                "<li class='k-drawer-item k-selected' data-id='inbox'>" +
+                "<span class='k-icon k-i-inbox'></span><span class='k-item-text'>Inbox</span>" +
+                "</li>" +
+                "<li class='k-drawer-item' data-id='project'>" +
+                "<span class='k-icon k-i-folder-add'></span><span class='k-item-text'>Add Project</span>" +
+                "</li>" +
+                "<li class='k-drawer-item' data-id='changepwd'>" +
+                "<span class='k-icon k-i-lock'></span><span class='k-item-text'>Change Password</span>" +
+                "</li>" +
+                "<li class='k-drawer-item' data-id='logout'>" +
+                "<span class='k-icon k-i-logout'></span><span class='k-item-text'>Logout</span>" +
+                "</li>" +
+                "</ul>",
+            itemClick: function (e) {
+                var id = $(e.item).data("id");
+                $(".k-drawer-item").removeClass("k-selected");
+                $(e.item).addClass("k-selected");
+                if (id === "inbox") {
+                    @* $("#page-title").text("My Tasks"); *@
+                        $("#grid").show();
+                    @* $("#changepwd-section").hide(); *@
+                        @* $("#profile-section").hide(); *@
+                        @* fixGridLayout(); *@
+                    }
+                else if (id === "project") {
+                    @* $("#page-title").text("Profile"); *@
+                        $("#grid").hide();
+                    window.location.href = "/AdminProject/Index";
+                    @* $("#changepwd-section").hide(); *@
+                        @* $("#profile-section").show(); *@
+                        @* loadProfile(); *@
+                    }
+                else if(id=="profile"){}
+                else if (id === "changepwd") {
+                    // $("#page-title").text("Change Password");
+                    $("#grid").hide();
+                    // $("#profile-section").hide();
+                    $("#changepwd-section").show();
+                }
+                else if (id === "logout") {
+                    window.location.href = "/Home/Logout";
+                }
+            }
+        }).data("kendoDrawer");
+        $("#drawer").on("mouseenter", function () { drawer.show(); fixGridLayout(); });
+        $("#drawer").on("mouseleave", function () { drawer.hide(); fixGridLayout(); });
+        $("#drawer-toggle").on("click", function () { drawer.toggle(); fixGridLayout(); });
+
+        @* var notification = $("#notification").kendoNotification().data("kendoNotification"); *@
+            $(document).ready(function () {
+
+                // ========== CHANGE PASSWORD ==========
+            $("#changepwd-form").on("submit", function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: "/Employee/ChangePassword",
+                    method: "POST",
+                    data: {
+                        OldPassword: $("input[name='OldPassword']").val(),
+                        NewPassword: $("input[name='NewPassword']").val(),
+                        ConfirmPassword: $("input[name='ConfirmPassword']").val()
+                    },
+                    success: function (resp) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success',
+                            text: resp.message || 'Password changed successfully.',
+                            timer: 1500,
+                            showConfirmButton: false
+                        });
+                        $("#changepwd-form")[0].reset();
+                    },
+                    error: function (xhr) {
+                        var msg = (xhr.responseJSON && xhr.responseJSON.error) || "Error changing password.";
+                        Swal.fire({ icon: 'error', title: 'Failed', text: msg });
+                    }
+                });
+            });
+                $("#grid").kendoGrid({
+                    dataSource: {
+                        transport: {
+                            read: {
+                                url: "/AdminTask/GetAllOverAccuracy",
+                                dataType: "json"
+                            }
+                        },
+                        schema: {
+                            model: {
+                                fields: {
+                                    empId: { type: "number" },
+                                    employeeName: { type: "string" },
+                                    profileimage: { type: "string" },
+                                    totaltasks: { type: "number" },
+                                    accuracyPercentage: { type: "number" },
+                                    efficiencyPercentage: { type: "number" }
+                                }
+                            }
+                        },
+                        pageSize: 10
+                    },
+                    height: 550,
+                    pageable: true,
+                    sortable: true,
+                    filterable: true,
+                    columns: [
+                        { field: "empId", title: "Emp ID", width: "100px" },
+                        { field: "employeeName", title: "Employee Name", width: "200px" },
+                        {
+                            field: "profileimage",
+                            title: "Profile Image",
+                            width: "120px",
+                            template: function (dataItem) {
+                                let imgPath = dataItem.profileimage ;
+                                return `<img src="/uploads/profiles/${imgPath}" 
+                                    alt="Profile" 
+                                    style="width:50px;height:50px;border-radius:50%;" />`;
+                            }
+                        },
+                        {
+                            field: "totaltasks",
+                            title: "Total Tasks",
+                            width: "120px",
+                                                @* template: function (dataItem) {
+                    return `<span class="k-badge k-badge-solid k-badge-success" 
+                                style="font-size:14px;">${dataItem.totaltasks}</span>`;
+                } *@
+                        },
+                    {
+                        title: "Details",
+                        width: "80px",
+                        template: function (dataItem) {
+                            return `<button type="button" class="detailsBtn k-button k-button-solid-primary"
+                                onclick="openDetailsWindow(${dataItem.empId}, ${dataItem.accuracyPercentage}, ${dataItem.efficiencyPercentage},'${dataItem.employeeName}')">
+                                Details
+                                </button>`;
+                        }
+                    }
+                                        ],
+                    dataBound: function (e) {
+                        $(".detailsBtn").kendoButton({
+                            icon: "search",
+                            size: "large"
+                        });
+                    }
+                    });
+
+
+        $("#detailsWindow").kendoWindow({
+            width: "1000px",
+            height: "700px",
+            title: "Employee Details",
+            visible: false,
+            modal: true,
+            resizable: true
+        });
+            });
+
+        function openDetailsWindow(empId, accuracy, efficiency, employeeName) {
+            var wnd = $("#detailsWindow").data("kendoWindow");
+            wnd.title("Employee Name - " + employeeName);
+
+            wnd.center().open();
+
+            $("#detailsWindow").html(`
+                                <div class="chart-container">
+                                    <div class="chart-box" id="accuracyPie"></div>
+                                    <div class="chart-box" id="efficiencyPie"></div>
+                                </div>
+                                <div id="taskGrid" style="margin-top:20px;"></div>
+                            `);
+
+            $("#accuracyPie").kendoChart({
+                title: { text: "Accuracy", position: "top", align: "center" },
+                legend: { position: "bottom" },
+                chartArea: { width: 450, height: 350, margin: 10 },
+                seriesDefaults: { type: "donut", startAngle: 150 },
+                series: [{
+                    data: [
+                        { category: "Accuracy", value: accuracy > 0 ? accuracy : 0.01 },
+                        { category: "Remaining", value: (100 - accuracy) > 0 ? (100 - accuracy) : 0.01 }
+                    ],
+                    labels: { visible: true, position: "outsideEnd", template: "#= category #: #= kendo.toString(value,'0.00') #%" }
+                }]
+            });
+
+            $("#efficiencyPie").kendoChart({
+                title: { text: "Efficiency", position: "top", align: "center" },
+                legend: { position: "bottom" },
+                chartArea: { width: 450, height: 350, margin: 10 },
+                seriesDefaults: { type: "donut", startAngle: 150 },
+                series: [{
+                    data: [
+                        { category: "Efficiency", value: efficiency > 0 ? efficiency : 0.01 },
+                        { category: "Remaining", value: (100 - efficiency) > 0 ? (100 - efficiency) : 0.01 }
+                    ],
+                    labels: { visible: true, position: "outsideEnd", template: "#= category #: #= kendo.toString(value,'0.00') #%" }
+                }]
+            });
+
+            $("#taskGrid").kendoGrid({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "http://localhost:5154/admintask/GetAllTaskByEmpId?Empid=" + empId,
+                            dataType: "json"
+                        }
+                    },
+                    schema: {
+                        data: function (response) {
+                            return response;
+                        },
+                        model: {
+                            fields: {
+                                projectName: { type: "string" },
+                                taskId: { type: "number" },
+                                title: { type: "string" },
+                                accuracyPercentage: { type: "number" }
+                            }
+                        }
+                    },
+                    pageSize: 5
+                },
+                height: 400,
+                sortable: true,
+                pageable: true,
+                filterable: true,
+                columns: [
+                    { field: "projectName", title: "Project Name", width: "200px" },
+                    { field: "taskId", title: "Task ID", width: "100px" },
+                    { field: "title", title: "Task Name", width: "250px" },
+                    {
+                        field: "accuracyPercentage",
+                        title: "Accuracy (%)", width: "150px",
+                        template: function (dataItem) {
+                            if (dataItem.accuracyPercentage == 0) {
+                                return '<span class="k-badge k-badge-solid k-badge-info k-badge-md" style="display:block; width:100%; text-align:center; box-sizing:border-box;">In Progress</span>';
+                            }
+                            else {
+                                return `
+                                            <div class="progress" style="height: 25px;">
+                                            <div class="progress-bar bg-success" role="progressbar" 
+                                                    style="width: ${dataItem.accuracyPercentage}%" 
+                                                    aria-valuenow="${dataItem.accuracyPercentage}" 
+                                                    aria-valuemin="0" aria-valuemax="100">
+                                                    ${dataItem.accuracyPercentage}%
+                                            </div>
+                                            </div>`;
+                            }
+                        },
+                    }
+                ]
+            });
+
+
+        }
+    </script>
+}

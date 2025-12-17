@@ -1,0 +1,282 @@
+@model Repositories.Models.t_employees
+
+@{
+    ViewData["Title"] = "Employee Registration";
+}
+
+
+<!-- <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2024.2.514/styles/kendo.default-v2.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2024.2.514/js/kendo.input.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form_wrapper {
+        width: 400px;
+        margin: 60px auto;
+    }
+
+    .form_container {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 30px 40px;
+        position: relative;
+    }
+
+    .form_container::before {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #fcb900;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title_container {
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+    .title_container h2 {
+        font-size: 22px;
+        color: #000;
+        font-weight: 700;
+        margin: 10px 0 0 0;
+    }
+
+    .input_field {
+        margin-bottom: 20px;
+    }
+
+    .input_field label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #444;
+    }
+
+    .input_field input[type="text"],
+    .input_field input[type="email"],
+    .input_field input[type="password"],
+    .input_field input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    /* Kendo Upload Cleanup */
+    .k-upload {
+        width: 100% !important;
+        background: #f8f8f8 !important;
+        border: 1px solid #ccc !important;
+        border-radius: 6px !important;
+        padding: 10px !important;
+    }
+
+    /* Hide all extra elements (second choose, file list, etc.) */
+    .k-upload-files,
+    .k-upload-status,
+    .k-upload-selected,
+    .k-clear-selected,
+    .k-upload-sync-button {
+        display: none !important;
+    }
+
+    .k-dropzone {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        min-height: 60px !important;
+    }
+
+    /* Preview image styling */
+    #imagePreview {
+        display: none;
+        margin-top: 15px;
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+    }
+
+
+    #btnRegister {
+        width: 100%;
+        padding: 12px;
+        background-color: #fcb900;
+        border: none;
+        color: rgba(0, 0, 0, 0.795);
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    #btnRegister:hover {
+        background-color: #ffcc33;
+    }
+
+    .k-invalid-msg {
+        color: red !important;
+        font-size: 13px;
+        margin-top: 5px;
+        display: block;
+    }
+</style>
+
+<div class="form_wrapper">
+    <div class="form_container">
+        <div class="title_container">
+            <h2>Employee Registration</h2>
+        </div>
+
+        <form id="employeeRegisterForm" enctype="multipart/form-data" method="post" asp-action="Register"
+            asp-controller="Home">
+
+            <div class="input_field">
+                <label>Employee Name</label>
+                <input asp-for="c_ename" id="c_ename" />
+                <span asp-validation-for="c_ename" class="text-danger"></span>
+            </div>
+
+            <div class="input_field">
+                <label>Email</label>
+                <input asp-for="c_email" id="c_email" />
+                <span asp-validation-for="c_email" class="text-danger"></span>
+            </div>
+
+            <div class="input_field">
+                <label>Password</label>
+                <input asp-for="c_password" id="c_password" type="password" />
+                <span asp-validation-for="c_password" class="text-danger"></span>
+            </div>
+
+
+            <div class="input_field">
+                <label>Confirm Password</label>
+                <input asp-for="c_confirmpassword" id="c_confirmpassword" type="password" />
+                <span asp-validation-for="c_confirmpassword" class="text-danger"></span>
+            </div>
+
+
+            <div class="input_field">
+                <label for="profilepicture">Profile Image:</label>
+                <input asp-for="profilepicture" type="file" id="profilepicture" />
+                <img id="imagePreview" src="#" alt="Preview" />
+                <span asp-validation-for="profilepicture" class="text-danger" id="imagerr"></span>
+            </div>
+
+            <div class="input_field">
+                <button id="btnRegister" type="submit">Register</button>
+            </div>
+            <p style="text-align:center; margin-top:15px;">
+                Already have an account? <a asp-action="Login" asp-controller="Home">Login Here</a>
+            </p>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+
+            $("#c_ename, #c_email, #c_password, #c_confirmpassword").kendoTextBox();
+
+            $("#profilepicture").on("change", function (event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        $("#imagePreview")
+                            .attr("src", e.target.result)
+                            .show(); // Show image after loading
+                        $("#imagerr").hide();
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    $("#imagePreview").hide(); // Hide if no file selected
+                    $("#imagerr").show();
+
+                }
+            });
+
+
+
+
+            $("#employeeRegisterForm").submit(function (e) {
+                e.preventDefault(); // Prevent normal form submit
+
+                if (!$(this).valid()) return;
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if (response.success === false) {
+                            // SweetAlert for email or other errors
+                            Swal.fire({
+                                icon: 'warning',
+                                title: 'Oops!',
+                                text: response.message || "Please fix the errors",
+                                confirmButtonColor: '#fcb900',
+                                timer: 1800
+                            });
+                        }
+                        else if (response.success === true && response.redirectUrl) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Success!',
+                                text: 'Registration Successful!',
+                                confirmButtonColor: '#3085d6',
+                                timer: 1800
+                            }).then(() => {
+                                window.location.href = response.redirectUrl;
+                            });
+                        }
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error!',
+                            text: 'Something went wrong.',
+                            confirmButtonColor: '#fcb900',
+                            timer: 1800
+                        });
+                    }
+                });
+            });
+
+            $("#btnRegister").kendoButton();
+
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}

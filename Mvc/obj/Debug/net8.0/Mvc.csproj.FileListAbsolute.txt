@@ -1,0 +1,248 @@
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.runtime.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.exe
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.deps.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.runtimeconfig.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.pdb
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Npgsql.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.pdb
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.AssemblyReference.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfoInputs.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfo.cs
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.CoreCompileInputs.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cs
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.build.Mvc.props
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mvc.props
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mvc.props
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\bundle\Mvc.styles.css
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\projectbundle\Mvc.bundle.scp.css
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.Up2Date
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\refint\Mvc.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.pdb
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.genruntimeconfig.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\ref\Mvc.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.sourcelink.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\refint\Mvc.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.pdb
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.runtime.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.exe
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.deps.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.runtimeconfig.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.pdb
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Npgsql.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.pdb
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.AssemblyReference.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfoInputs.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfo.cs
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.CoreCompileInputs.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cs
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.sourcelink.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.build.Mvc.props
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mvc.props
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mvc.props
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\bundle\Mvc.styles.css
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\projectbundle\Mvc.bundle.scp.css
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.Up2Date
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.genruntimeconfig.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\ref\Mvc.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\refint\Mvc.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.pdb
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.Development.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.runtime.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.endpoints.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.exe
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.deps.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.runtimeconfig.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.pdb
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Npgsql.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.pdb
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.AssemblyReference.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfoInputs.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfo.cs
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.CoreCompileInputs.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.MvcApplicationPartsAssemblyInfo.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cs
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.sourcelink.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\bundle\Mvc.styles.css
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\projectbundle\Mvc.bundle.scp.css
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.development.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.Up2Date
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.genruntimeconfig.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\ref\Mvc.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.runtime.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.exe
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.deps.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.runtimeconfig.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.pdb
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Npgsql.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.pdb
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.AssemblyReference.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfoInputs.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfo.cs
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.CoreCompileInputs.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cs
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.sourcelink.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.build.Mvc.props
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mvc.props
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mvc.props
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\bundle\Mvc.styles.css
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\projectbundle\Mvc.bundle.scp.css
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.Up2Date
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\refint\Mvc.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.pdb
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.genruntimeconfig.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\ref\Mvc.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.runtime.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.exe
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.deps.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.runtimeconfig.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.pdb
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Npgsql.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.pdb
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.AssemblyReference.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfoInputs.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfo.cs
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.CoreCompileInputs.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cs
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.sourcelink.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.build.Mvc.props
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mvc.props
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mvc.props
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\bundle\Mvc.styles.css
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\projectbundle\Mvc.bundle.scp.css
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.Up2Date
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\refint\Mvc.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.pdb
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.genruntimeconfig.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\ref\Mvc.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\appsettings.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.staticwebassets.runtime.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.exe
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.deps.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.runtimeconfig.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Mvc.pdb
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\bin\Debug\net8.0\Repositories.pdb
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.AssemblyReference.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfoInputs.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.AssemblyInfo.cs
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.RazorAssemblyInfo.cs
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.sourcelink.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.build.Mvc.props
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mvc.props
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mvc.props
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\bundle\Mvc.styles.css
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\scopedcss\projectbundle\Mvc.bundle.scp.css
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.csproj.Up2Date
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\refint\Mvc.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.pdb
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\Mvc.genruntimeconfig.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Mvc\obj\Debug\net8.0\ref\Mvc.dll

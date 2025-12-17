@@ -1,0 +1,397 @@
+@model List<Repositories.Models.t_projects>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    .field-validation-error {
+        font-size: 13px;
+        color: red;
+        display: block;
+        margin-top: 3px;
+    }
+
+    .layout-container {
+    display: flex;
+    flex-direction: row; /* side by side */
+    height: calc(100vh - 120px); /* full height minus header */
+}
+
+#drawer {
+    flex-shrink: 0; /* don’t let it shrink */
+}
+
+#shell {
+    flex-grow: 1; /* take the rest of the space */
+    padding: 10px;
+    overflow: auto;
+}
+
+
+    .full-bleed {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .k-drawer-container {
+        height: calc(100vh - 120px);
+        max-height: calc(100vh - 120px);
+    }
+
+    .k-drawer-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .appbar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+    }
+
+    .hamburger {
+        margin-left: 0;
+        border: 0;
+        background: #facc15;
+        /* yellow */
+        color: #111;
+        /* dark text */
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .hamburger:hover {
+        background: #eab308;
+        /* darker yellow */
+    }
+
+    .k-drawer-items .k-drawer-item.k-selected {
+        background: #facc15;
+        /* yellow */
+        color: #111;
+    }
+
+    .k-drawer-items .k-drawer-item.k-selected .k-icon {
+        color: #111;
+    }
+
+    .k-drawer-items .k-drawer-item .k-icon {
+        margin-right: 10px;
+    }
+
+    .k-drawer-items .k-drawer-item .k-item-text {
+        white-space: nowrap;
+    }
+</style>
+<div class="full-bleed">
+    <div class="layout-container">
+        <!-- Drawer element -->
+        <div id="drawer"></div>
+
+        <!-- Content area (grid, buttons, etc.) -->
+        <div class="k-drawer-container" id="shell">
+            <div>
+                <div style="margin-bottom:10px;">
+                    <button type="button" class="k-button k-button-solid-warning" id="btnadd" onclick="addForm()">Add Project</button>
+                </div>
+                <div id="grid"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="myKModal">
+    <form id="ProjectForm"></form>
+    <div id="responseModalMessage"></div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        var drawer = $("#drawer").kendoDrawer({
+            mode: "push",
+            position: "left",
+            mini: true,
+            width: 220,
+            template:
+                "<ul class='k-drawer-items'>" +
+                "<li class='k-drawer-item k-selected' data-id='inbox'>" +
+                "<span class='k-icon k-i-arrow-60-left'></span><span class='k-item-text'>Back</span>" +
+                "</li>" +
+                "<li class='k-drawer-item' data-id='logout'>" +
+                "<span class='k-icon k-i-logout'></span><span class='k-item-text'>Logout</span>" +
+                "</li>" +
+                "</ul>",
+            itemClick: function (e) {
+                var id = $(e.item).data("id");
+                $(".k-drawer-item").removeClass("k-selected");
+                $(e.item).addClass("k-selected");
+                if (id === "inbox") {
+                        window.location.href = "/AdminTask/Index";
+                    }
+                else if (id === "logout") {
+                    window.location.href = "/Home/Logout";
+                }
+            }
+        }).data("kendoDrawer");
+        $("#drawer").on("mouseenter", function () { drawer.show(); fixGridLayout(); });
+        $("#drawer").on("mouseleave", function () { drawer.hide(); fixGridLayout(); });
+        $("#drawer-toggle").on("click", function () { drawer.toggle(); fixGridLayout(); });
+
+        $("#btnadd").kendoButton({
+            icon: "plus",
+            size: "large"
+        });
+
+
+        $(document).ready(function () {
+            buildForm();
+            loadWindows();
+            loadKendo();
+        });
+        function loadWindows() {
+            $("#myKModal").kendoWindow({
+                width: "600px",
+                title: "Contact Form",
+                visible: false,
+                modal: true,
+                actions: ["Close"]
+            });
+        }
+
+        function buildForm() {
+            const validationSuccess = $("#validation-success");
+            $("#ProjectForm").kendoForm({
+                formData: {
+                    ProjectId: "0",
+                    ProjectName: "",
+                    Description: ""
+                },
+                items: [
+                    {
+                        field: "ProjectId",
+                        label: "",
+                        editor: function (container, options) {
+                            $('<input type="hidden" id="projectid" name="' + options.field + '" value="0" />').appendTo(container);
+                        }
+                    },
+                    {
+                        field: "ProjectName", label: "Project Name", validation: { required: { message: "Please enter Project Name!" } },
+                        hint: "<span id='error_c_projectname' class='field-validation-error'></span>"
+                    },
+                    {
+                        field: "Description", label: "Description", validation: { required: { message: "Please enter Project Description!" } },
+                        hint: "<span id='error_c_description' class='field-validation-error'></span>"
+                    }
+                ],
+                buttonsTemplate: '<button type="submit" class="k-button k-button-lg k-button-solid-info">Save</button>' + '<button type="button" class="k-button-solid-base k-button-lg" onclick="clearForm()">Clear</button>',
+                validateField: function (e) {
+                },
+                submit: function (e) {
+                    e.preventDefault();
+                    const ProjectData = new FormData();
+
+                    ProjectData.append("c_projectid", e.model.ProjectId);
+                    ProjectData.append("c_projectname", e.model.ProjectName);
+                    ProjectData.append("c_description", e.model.Description);
+
+                    $.ajax({
+                        url: "/AdminProject/Create",
+                        method: "POST",
+                        contentType: false,
+                        processData: false,
+                        data: ProjectData,
+                        success: function (result) {
+                            if (result.success) {
+                                Swal.fire({
+                                    icon: "success",
+                                    title: e.model.ProjectId == 0 ? "Inserted!" : "Updated!",
+                                    text: e.model.ProjectId == 0 ? "Project inserted successfully." : "Project updated successfully.",
+                                    timer: 1500,
+                                    showConfirmButton: false
+                                });
+                                $("#myKModal").data("kendoWindow").close();
+                                loadKendo();
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Error",
+                                    text: result.message
+                                });
+                                $("#myKModal").data("kendoWindow").close();
+                            }
+                        },
+                        error: function (xhr) {
+                            if (xhr.responseJSON && xhr.responseJSON.message) {
+                                let errors = xhr.responseJSON.message;
+
+                                $(".field-validation-error").text("");
+
+                                for (let field in errors) {
+                                    let message = errors[field].join(", ");
+                                    $(`#error_${field}`).text(message);
+                                }
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Error",
+                                    text: "Unknown error occurred"
+                                });
+                            }
+                        }
+                    });
+
+                    @* validationSuccess.html("<div class='k-messagebox k-messagebox-success'>Form data is valid!</div>"); *@
+                            }
+            });
+        }
+
+        function addForm() {
+            $("#ProjectForm").data("kendoForm").setOptions({
+                formData: {
+                    ProjectId: "0",
+                    ProjectName: "",
+                    Description: ""
+                }
+            });
+            openModal();
+        }
+
+        function editForm(id) {
+            var form = $("#ProjectForm").getKendoForm();
+            $.ajax({
+                url: "/AdminProject/GetProjectById/" + id,
+                type: 'GET',
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    $("#ProjectForm").data("kendoForm").setOptions({
+                        formData: {
+                            ProjectId: response[0].c_projectid,
+                            ProjectName: response[0].c_projectname,
+                            Description: response[0].c_description
+                        }
+                    });
+                    openModal();
+                },
+                error: function (xhr) {
+                    $('#responseModalMessage').addClass("alert alert-danger");
+                    $('#responseModalMessage').text('Error: ' + xhr.responseText);
+                }
+            });
+
+        }
+
+        function clearForm() {
+            $("#ProjectForm").data("kendoForm").clear();
+        }
+
+        function openModal() {
+            $("#myKModal").data("kendoWindow").center().open();
+        }
+
+        function closeModal() {
+            $("#myKModal").data("kendoWindow").close();
+        }
+
+        function loadKendo() {
+            $.ajax({
+                url: "/AdminProject/GetAll/",
+                type: 'GET',
+                success: function (response) {
+                    console.log(response);
+                    $("#grid").kendoGrid({
+                        dataSource: {
+                            data: response,
+                            schema: {
+                                model: {
+                                    fields: {
+                                        c_projectid: { type: "number" },
+                                        c_projectname: { type: "string" },
+                                        c_description: { type: "string" },
+                                    }
+                                }
+                            },
+                            pageSize: 9
+                        },
+                        height: 500,
+                        pageable: true,
+                        sortable: true,
+                        filterable: true,
+                        columns: [
+                            { field: "c_projectname", title: "Project Name", width: "100px" },
+                            { field: "c_description", title: "Description", width: "150px" },
+                            {
+                                title: "Actions",
+                                width: 45,
+                                template: `<button class='button" class="k-button k-button-solid-inverse editButton' onclick='editForm(#=c_projectid#)'>Edit</button>  <button class='k-button k-button-solid-primary deleteButton' onclick='deleteData(#=c_projectid#,\"#=c_projectname#\")'>Delete</button>`
+                            }
+                        ],
+                        dataBound: function () {
+                            $(".editButton").kendoButton({
+                                icon: "pencil",
+                            });
+                            $(".deleteButton").kendoButton({
+                                icon: "trash",
+                            });
+                        }
+                    });
+                },
+                error: function (xhr) {
+                    $('#responseMessage').addClass("alert alert-danger");
+                    $('#responseMessage').text('Error: ' + xhr.responseText);
+                }
+            });
+        }
+        function deleteData(id, name) {
+            Swal.fire({
+                title: "Are you sure?",
+                text: "Do you really want to delete project: " + name + "?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#3085d6",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: "/AdminProject/Delete/" + id,
+                        type: 'GET',
+                        contentType: false,
+                        processData: false,
+                        success: function () {
+                            Swal.fire({
+                                icon: "success",
+                                title: "Deleted!",
+                                text: "Project deleted successfully.",
+                                timer: 1500,
+                                showConfirmButton: false
+                            });
+                            loadKendo(); // ✅ refresh grid
+                        },
+                        error: function (xhr) {
+                            Swal.fire({
+                                icon: "error",
+                                title: "Error",
+                                text: xhr.responseText
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+}

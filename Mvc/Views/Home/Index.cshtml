@@ -1,0 +1,62 @@
+﻿@* @using Repositories.Models
+@model t_taskaccurarcy
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+<h3>Task</h3>
+<table class="table table-striped" id="contactTable">
+        <thead class="thead-dark">
+            <tr>
+                <th>Task Id</th>
+                <th>Task Name</th>
+                <th>Project Name</th>
+                <th>Employee Name</th>
+                <th>Task Accuracy</th> 
+            </tr>
+        </thead>
+        <tbody>
+             <tr style="vertical-align: middle;">
+                    <td>@Model.TaskId</td>
+                     <td>@Model.Title</td>
+                    <td>@Model.ProjectName</td>
+                    <td>@Model.EmployeeName</td>
+                    <td>@Model.AccuracyPercentage</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+ *@
+
+ @{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkTrack | Track Smarter. Work Better.</title>
+    <link href="~/css/landing.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <div class="logo-section">
+                <img src="~/images/worktrack_logo.png" alt="WorkTrack Logo" class="logo" />
+                <h2 class="project-name">WorkTrack</h2>
+            </div>
+        </header>
+
+        <main class="hero-content">
+            <h1 class="fade-up">Track Smarter.<br />Work Better.</h1>
+            <div class="buttons fade-up delay-1">
+                <a href="/Home/Login" class="btn login-btn glow-btn">Login</a>
+                <a href="/Home/Register" class="btn register-btn glow-border">Register</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

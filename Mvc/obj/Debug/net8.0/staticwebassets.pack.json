@@ -1,0 +1,365 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Mvc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Mvc.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\css\\landing.css",
+      "PackagePath": "staticwebassets\\css\\landing.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\images\\people_banner.png",
+      "PackagePath": "staticwebassets\\images\\people_banner.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\images\\worktrack_logo.png",
+      "PackagePath": "staticwebassets\\images\\worktrack_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\kendo\\kendo.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo\\kendo.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\lib\\kendo\\kendo.default-v2.min.css",
+      "PackagePath": "staticwebassets\\lib\\kendo\\kendo.default-v2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\1f82af79-67b7-45b3-aee9-8158f22344b1.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\1f82af79-67b7-45b3-aee9-8158f22344b1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\2d9152b3-3487-4b47-b02e-eb32498da1c2.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\2d9152b3-3487-4b47-b02e-eb32498da1c2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\4267ea0e-7a94-4b53-bf38-036eee878190.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\4267ea0e-7a94-4b53-bf38-036eee878190.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\4c899e0b-3ba6-444a-b3aa-e312b9e7abbf.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\4c899e0b-3ba6-444a-b3aa-e312b9e7abbf.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\6076c17f-8b29-474e-af6c-36ca19e7db5f.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\6076c17f-8b29-474e-af6c-36ca19e7db5f.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\971f9d47-15ed-47b0-9def-b4f348947ffe.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\971f9d47-15ed-47b0-9def-b4f348947ffe.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\abc@g.com.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\abc@g.com.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\abc@gmail.com.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\abc@gmail.com.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\abcc@g.com.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\abcc@g.com.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\ceta@mailinator.com.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\ceta@mailinator.com.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\default.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\demoemp@gmail.com.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\demoemp@gmail.com.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\emp_103_20251009082644659.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\emp_103_20251009082644659.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\emp_103_20251009082955682.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\emp_103_20251009082955682.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\emp_103_20251009084534638.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\emp_103_20251009084534638.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\emp_107_20251009082421852.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\emp_107_20251009082421852.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\nirbhay@gmail.com.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\nirbhay@gmail.com.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\nirbhyy@g.com.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\nirbhyy@g.com.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Downloads\\final project (1)\\final project\\final project\\WorkTrack\\WorkTrack\\WorkTrack\\Mvc\\wwwroot\\uploads\\profiles\\vipanacefo@mailinator.com.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\vipanacefo@mailinator.com.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Mvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Mvc.props",
+      "PackagePath": "build\\Mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Mvc.props",
+      "PackagePath": "buildMultiTargeting\\Mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Mvc.props",
+      "PackagePath": "buildTransitive\\Mvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

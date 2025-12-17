@@ -1,0 +1,918 @@
+@{
+    ViewData["Title"] = "My Tasks";
+
+}
+
+@{
+    var userId = Context.Session.GetInt32("EmployeeId");
+    string userrole = Context.Session.GetString("Role");
+}
+
+@if (userId == 1 || userrole == "Admin")
+{
+    <script type="text/javascript">
+        window.location.href = '@Url.Action("Login", "Home")';
+
+    </script>
+}
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+@Html.AntiForgeryToken()
+
+<style>
+    /* Layout & Container Styles */
+    .full-bleed {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .k-drawer-container {
+        height: calc(100vh - 120px);
+        max-height: calc(100vh - 120px);
+    }
+
+    .k-drawer-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    /* Header & Navigation */
+    .appbar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+    }
+
+    .hamburger {
+        border: 0;
+        background: #facc15;
+        color: #111;
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .hamburger:hover {
+        background: #eab308;
+    }
+
+    /* Drawer Menu Items */
+    .k-drawer-items .k-drawer-item.k-selected {
+        background: #facc15;
+        color: #111;
+    }
+
+    .k-drawer-items .k-drawer-item.k-selected .k-icon {
+        color: #111;
+    }
+
+    .k-drawer-items .k-drawer-item .k-icon {
+        margin-right: 10px;
+    }
+
+    .k-drawer-items .k-drawer-item .k-item-text {
+        white-space: nowrap;
+    }
+
+    /* Main Content Area */
+    .content-wrap {
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow: auto;
+        padding: 14px;
+    }
+
+    /* Password Input with Toggle */
+    .password-group {
+        position: relative;
+    }
+
+    .password-group input {
+        padding-right: 36px;
+    }
+
+    .password-toggle {
+        position: absolute;
+        right: 10px;
+        top: 67%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #888;
+        transition: color 0.2s;
+    }
+
+    .password-toggle:hover {
+        color: #facc15;
+    }
+
+    /* Buttons */
+    .btn-danger {
+        background-color: #facc15 !important;
+        border-color: #facc15 !important;
+        color: #111 !important;
+    }
+
+    .btn-danger:hover,
+    .btn-danger:focus {
+        background-color: #eab308 !important;
+        border-color: #eab308 !important;
+        color: #111 !important;
+    }
+
+    /* Popup Window (Centered) */
+    .k-window {
+        position: fixed !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    /* Popup Button Group (Centered Buttons) */
+    .k-dialog-buttongroup {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 16px !important;
+    }
+
+    .k-window .k-dialog-buttongroup .k-button {
+        min-width: 100px !important;
+    }
+
+    /* Primary Button (Add/Update) */
+    .k-window .k-dialog-buttongroup .k-primary {
+        background: #facc15 !important;
+        border-color: #facc15 !important;
+        color: #111 !important;
+    }
+
+    .k-window .k-dialog-buttongroup .k-primary:hover {
+        background: #eab308 !important;
+        border-color: #eab308 !important;
+    }
+
+    /* Secondary Button (Cancel) */
+    .k-window .k-dialog-buttongroup .k-button:not(.k-primary) {
+        background: #f0f0f0 !important;
+        border-color: #d0d0d0 !important;
+        color: #333 !important;
+    }
+
+    .k-window .k-dialog-buttongroup .k-button:not(.k-primary):hover {
+        background: #e0e0e0 !important;
+        border-color: #b0b0b0 !important;
+    }
+
+    /* Form Styling */
+    .k-edit-form-container {
+        max-width: 100% !important;
+        padding: 20px !important;
+    }
+
+    .k-edit-label {
+        display: block !important;
+        margin-bottom: 8px !important;
+        font-weight: 500;
+        min-width: auto !important;
+    }
+
+    .k-edit-field {
+        margin-bottom: 16px !important;
+    }
+
+    /* Status Pills */
+    .status-pill {
+        display: inline-block;
+        padding: 3px 9px;
+        border-radius: 9999px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.2;
+        border: 1px solid transparent;
+    }
+
+    .status-green {
+        background: #dcfce7;
+        color: #166534;
+        border-color: #86efac;
+    }
+
+    .status-red {
+        background: #fee2e2;
+        color: #991b1b;
+        border-color: #fecaca;
+    }
+
+    /* Grid Buttons */
+    .k-grid tbody td .status-pill {
+        display: inline-block !important;
+    }
+
+    .k-grid .k-grid-toolbar .k-grid-add {
+        background: #facc15 !important;
+        border-color: #facc15 !important;
+        color: #111 !important;
+    }
+
+    .k-grid .k-grid-toolbar .k-grid-add:hover {
+        background: #eab308 !important;
+        border-color: #eab308 !important;
+    }
+
+    .k-grid .k-grid-edit {
+        background: #3b82f6 !important;
+        border-color: #3b82f6 !important;
+        color: #fff !important;
+    }
+
+    .k-grid .k-grid-edit:hover {
+        background: #2563eb !important;
+        border-color: #2563eb !important;
+    }
+
+    .k-grid .k-grid-delete {
+        background: #ef4444 !important;
+        border-color: #ef4444 !important;
+        color: #fff !important;
+    }
+
+    .k-grid .k-grid-delete:hover {
+        background: #dc2626 !important;
+        border-color: #dc2626 !important;
+    }
+
+    /* Profile Section */
+    .profile-strip {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .profile-strip img {
+        width: 38px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #facc15;
+    }
+
+    .profile-strip .profile-name {
+        font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .2px;
+    }
+
+    /* Info Messages */
+    .end-date-info {
+        font-size: 11px;
+        color: #666;
+        margin-top: 4px;
+    }
+
+    .swal2-container {
+        z-index: 10050 !important;
+    }
+</style>
+
+<div class="full-bleed">
+    <div class="k-drawer-container" id="shell">
+        <!-- Sidebar Drawer -->
+        <div id="drawer"></div>
+
+        <!-- Main Content Area -->
+        <div class="k-drawer-content" id="main">
+            <!-- Header with Profile -->
+            <header class="appbar">
+                <button id="drawer-toggle" class="hamburger" title="Menu">&#9776;</button>
+                <strong id="page-title">My Tasks</strong>
+                <div style="flex:1"></div>
+
+                <div class="profile-strip">
+                    <img id="profile-mini" src="" alt="Profile picture" />
+                    <div class="profile-name" id="profile-name">@ViewBag.EmpName</div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-wrap">
+                <!-- Notification Container -->
+                <div id="notification" class="mb-3"></div>
+
+                <!-- Hidden Employee ID -->
+                <input type="hidden" id="empId" value="@ViewBag.EmpId" />
+
+                <!-- Grid Container -->
+                <div id="grid"></div>
+
+                <!-- Change Password Section -->
+                <div id="changepwd-section" style="display:none; max-width:400px;">
+                    <form id="changepwd-form">
+                        <div class="form-group mb-2 password-group">
+                            <label>Old Password</label>
+                            <input type="password" name="OldPassword" class="form-control" required />
+                            <i class="fa fa-eye password-toggle" data-target="OldPassword"></i>
+                        </div>
+                        <div class="form-group mb-2 password-group">
+                            <label>New Password</label>
+                            <input type="password" name="NewPassword" class="form-control" required minlength="4"
+                                pattern="^(?=.*\d).{4,}$" title="Must be at least 4 characters and include a number" />
+                            <i class="fa fa-eye password-toggle" data-target="NewPassword"></i>
+                        </div>
+                        <div class="form-group mb-2 password-group">
+                            <label>Confirm Password</label>
+                            <input type="password" name="ConfirmPassword" class="form-control" required />
+                            <i class="fa fa-eye password-toggle" data-target="ConfirmPassword"></i>
+                        </div>
+                        <button type="submit" class="btn btn-danger mt-2">Change Password</button>
+                    </form>
+                </div>
+
+                <!-- Profile Section -->
+                <div id="profile-section" style="display:none; max-width:520px;">
+                    <form id="profile-form" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label class="form-label">Email (read-only)</label>
+                            <input type="email" name="c_email" class="form-control" readonly />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" name="c_ename" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Current Photo</label><br />
+                            <img id="profile-preview" src="" alt="Profile"
+                                style="max-width:120px; max-height:120px; border-radius:8px; border:1px solid #eee;" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Upload New Photo</label>
+                            <input type="file" name="profilepicture" class="form-control" accept="image/*" />
+                        </div>
+                        <button type="submit" class="btn btn-danger">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $(function () {
+            // ========== DRAWER / NAVIGATION ==========
+            var drawer = $("#drawer").kendoDrawer({
+                mode: "push",
+                position: "left",
+                mini: true,
+                width: 220,
+                template:
+                    "<ul class='k-drawer-items'>" +
+                    "<li class='k-drawer-item k-selected' data-id='inbox'><span class='k-icon k-i-inbox'></span><span class='k-item-text'>Inbox</span></li>" +
+                    "<li class='k-drawer-item' data-id='profile'><span class='k-icon k-i-user'></span><span class='k-item-text'>Profile</span></li>" +
+                    "<li class='k-drawer-item' data-id='changepwd'><span class='k-icon k-i-lock'></span><span class='k-item-text'>Change Password</span></li>" +
+                    "<li class='k-drawer-item' data-id='logout'><span class='k-icon k-i-logout'></span><span class='k-item-text'>Logout</span></li>" +
+                    "</ul>",
+                itemClick: function (e) {
+                    var menuId = $(e.item).data("id");
+                    $(".k-drawer-item").removeClass("k-selected");
+                    $(e.item).addClass("k-selected");
+
+                    // Show/Hide sections based on selected menu
+                    if (menuId === "inbox") {
+                        $("#page-title").text("My Tasks");
+                        $("#grid").show();
+                        $("#changepwd-section").hide();
+                        $("#profile-section").hide();
+                        @* fixGridLayout(); *@
+                                                    }
+                    else if (menuId === "profile") {
+                        $("#page-title").text("Profile");
+                        $("#grid").hide();
+                        $("#changepwd-section").hide();
+                        $("#profile-section").show();
+                        loadProfile();
+                    }
+                    else if (menuId === "changepwd") {
+                        $("#page-title").text("Change Password");
+                        $("#grid").hide();
+                        $("#profile-section").hide();
+                        $("#changepwd-section").show();
+                    }
+                    else if (menuId === "logout") {
+                        window.location.href = "/Home/Logout";
+                    }
+                }
+            }).data("kendoDrawer");
+
+            // Drawer toggle handlers
+            $("#drawer").on("mouseenter", function () { drawer.show(); });
+            $("#drawer").on("mouseleave", function () { drawer.hide(); });
+            $("#drawer-toggle").on("click", function () { drawer.toggle(); });
+
+            @* $("#drawer").on("mouseenter", function () { drawer.show(); fixGridLayout(); });
+            $("#drawer").on("mouseleave", function () { drawer.hide(); fixGridLayout(); });
+            $("#drawer-toggle").on("click", function () { drawer.toggle(); fixGridLayout(); }); *@
+
+                                            // ========== DATA SOURCE ==========
+                                            var ds = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "/Task/List",
+                        type: "GET",
+                        dataType: "json"
+                    },
+                    create: {
+                        url: "/Task/Create",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8"
+                    },
+                    update: {
+                        url: "/Task/Update",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8"
+                    },
+                    destroy: {
+                        url: "/Task/Delete",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8"
+                    },
+                    parameterMap: function (data, type) {
+                        if (type === "read") {
+                            return data;
+                        }
+
+                        if (type === "create") {
+                            return JSON.stringify({
+                                c_projectid: (data.c_projectid && data.c_projectid > 0) ? parseInt(data.c_projectid) : null,
+                                c_title: (data.c_title || "").trim(),
+                                c_description: (data.c_description || "").trim(),
+                                c_status: data.c_status || "Pending",
+                                c_estimateddays: parseInt(data.c_estimateddays) || 1,
+                                c_startdate: data.c_startdate ? kendo.toString(new Date(data.c_startdate), "yyyy-MM-dd") : null
+                            });
+                        }
+
+                        if (type === "update") {
+                            return JSON.stringify({
+                                c_taskid: parseInt(data.c_taskid),
+                                c_projectid: (data.c_projectid && data.c_projectid > 0) ? parseInt(data.c_projectid) : null,
+                                c_title: (data.c_title || "").trim(),
+                                c_description: (data.c_description || "").trim(),
+                                c_status: data.c_status || "Pending",
+                                c_estimateddays: parseInt(data.c_estimateddays) || 1,
+                                c_startdate: data.c_startdate ? kendo.toString(new Date(data.c_startdate), "yyyy-MM-dd") : null
+                            });
+                        }
+
+                        if (type === "destroy") {
+                            return JSON.stringify({
+                                c_taskid: parseInt(data.c_taskid)
+                            });
+                        }
+
+                        return JSON.stringify(data);
+                    }
+                },
+                pageSize: 10,
+                schema: {
+                    data: function (response) {
+                        if (response.data) {
+                            return Array.isArray(response.data) ? response.data : [response.data];
+                        }
+                        return response;
+                    },
+                    total: function (response) {
+                        if (response.total !== undefined) return response.total;
+                        if (response.data && Array.isArray(response.data)) return response.data.length;
+                        return 1;
+                    },
+                    model: {
+                        id: "c_taskid",
+                        fields: {
+                            c_taskid: { type: "number", editable: false, nullable: true },
+                            c_empid: { type: "number", editable: false, nullable: false },
+                            c_projectid: { type: "number", nullable: true },
+                            c_projectname: { type: "string", editable: false },
+                            c_title: { type: "string", validation: { required: true } },
+                            c_description: { type: "string", validation: { required: true } },
+                            c_status: { type: "string", defaultValue: "Pending", validation: { required: true } },
+                            c_estimateddays: { type: "number", defaultValue: 1, validation: { required: true, min: 1 } },
+                            c_startdate: { type: "date", validation: { required: true } },
+                            c_enddate: { type: "date", nullable: true, editable: false }
+                        }
+                    }
+                },
+                requestEnd: function (e) {
+                    if (e.type === "create" || e.type === "update" || e.type === "destroy") {
+                        var resp = e.response || {};
+                        var isSuccess = !resp.error;
+                        var message = resp.error || resp.message ||
+                            (e.type === "create" ? "Task created successfully."
+                                : e.type === "update" ? "Task updated successfully."
+                                    : "Task deleted successfully.");
+
+                        Swal.fire({
+                            icon: isSuccess ? 'success' : 'error',
+                            title: isSuccess ? 'Success' : 'Error',
+                            text: message,
+                            timer: 1500,
+                            showConfirmButton: false
+                        });
+
+                        if (isSuccess && (e.type === "create" || e.type === "update")) {
+                            setTimeout(function () {
+                                ds.read();
+                                @* fixGridLayout(); *@
+                                                            }, 100);
+                        }
+                    }
+                },
+                error: function (e) {
+                    var msg = "Request failed.";
+                    if (e.xhr) {
+                        try {
+                            var json = JSON.parse(e.xhr.responseText);
+                            msg = json.error || json.message || msg;
+                        } catch (ex) {
+                            msg = e.xhr.responseText || msg;
+                        }
+                    }
+                    Swal.fire({ icon: 'error', title: 'Request failed', text: msg });
+                }
+            });
+
+            var isCreateMode = true;
+            // ========== GRID ==========
+            var grid = $("#grid").kendoGrid({
+                dataSource: ds,
+                toolbar: [{ name: "create", text: "Add Task" }, "search"],
+                search: {
+                    fields: ["c_title", "c_description", "c_projectname", "c_status"]
+                },
+                pageable: true,
+                sortable: true,
+                reorderable: true,
+                columnMenu: true,
+                filterable: true,
+                resizable: true,
+                editable: {
+                    mode: "popup",
+                    window: {
+                        title: "Task",
+                        width: 510,
+                        modal: true,
+                        actions: ["Close"]
+                    }
+                },
+
+                edit: function (e) {
+                    isCreateMode = e.model.isNew();
+                    console.log('isCreateMode:', isCreateMode);
+                    var isNew = e.model.isNew();
+                    var windowDiv = e.container.closest(".k-window");
+                    var contentDiv = e.container.closest(".k-window-content");
+
+                    setTimeout(function () {
+                        // Update button text
+                        var updateBtn = windowDiv.find(".k-grid-update");
+                        if (updateBtn.length) {
+                            updateBtn.text(isNew ? "Add" : "Update");
+                        }
+
+                        // Handle end date field visibility
+                        var endDateField = contentDiv.find("input[name='c_enddate']").closest(".k-edit-field");
+                        var endDateLabel = contentDiv.find("label[for='c_enddate']").closest(".k-edit-label");
+
+                        if (isNew) {
+                            endDateField.hide();
+                            endDateLabel.hide();
+                        } else {
+                            endDateField.show();
+                            endDateLabel.show();
+                            var endDateInput = contentDiv.find("input[name='c_enddate']");
+                            endDateInput.attr("readonly", true).css("background-color", "#f5f5f5");
+
+                            // Add info message if not already present
+                            if (!endDateField.find(".end-date-info").length) {
+                                endDateField.append(
+                                    "<div class='end-date-info'>" +
+                                    "End date is set automatically when status changes to Completed" +
+                                    "</div>"
+                                );
+                            }
+                        }
+                    }, 50);
+                },
+
+                dataBound: function () {
+                    applyStatusChips();
+                },
+
+                columns: [
+
+                    {
+                        field: "c_projectid",
+                        title: "Project",
+                        editor: function (container, options) {
+                            $('<input name="' + options.field + '"/>').appendTo(container).kendoDropDownList({
+                                dataSource: { transport: { read: { url: "/AdminProject/GetAll", dataType: "json" } } },
+                                dataTextField: "c_projectname",
+                                dataValueField: "c_projectid",
+                                valuePrimitive: true,
+                                optionLabel: "-- Select Project --",
+                                change: function (e) {
+                                    var dataItem = this.dataItem();
+                                    if (dataItem) options.model.set("c_projectname", dataItem.c_projectname || "");
+                                }
+                            });
+                        },
+                        template: function (d) { return d.c_projectname || "N/A"; },
+                        width: 200
+                    },
+                    { field: "c_title", title: "Title", width: 150 },
+                    { field: "c_description", title: "Description", width: 200 },
+                    {
+                        field: "c_status",
+                        title: "Status",
+                        width: 150,
+                        editor: function (container, options) {
+                            // Get the task ID (assuming your task has an ID field like "c_taskid")
+                            var taskId = options.model.c_taskid; // Adjust this to the actual field name if necessary
+                            console.log('Task ID:', taskId);
+
+                            // Determine whether it's create or edit mode based on task ID
+                            var dataSource = taskId ? ["Pending", "Completed"] : ["Pending"];
+
+                            // Create the dropdown for status
+                            var dropdown = $('<input name="' + options.field + '"/>').appendTo(container).kendoDropDownList({
+                                dataSource: dataSource,  
+                                valuePrimitive: true,
+                                optionLabel: "-- Select --",  
+                                value: options.model.c_status,  
+                                change: function (e) {
+                                    var dataItem = this.dataItem();
+                                    if (dataItem) {
+                                        options.model.set("c_status", dataItem); 
+                                    }
+                                }
+                            });
+
+                            
+                            dropdown.data("kendoDropDownList").value(options.model.c_status);
+                        }
+                    },
+
+
+                    {
+                        field: "c_estimateddays",
+                        title: "Est. Days",
+                        width: 120,
+                        editor: function (container, options) {
+                            $('<input name="' + options.field + '"/>').appendTo(container).kendoNumericTextBox({
+                                format: "n0",
+                                min: 1,
+                                step: 1,
+                                value: 1
+                            });
+                        }
+                    },
+                    {
+                        field: "c_startdate",
+                        title: "Start",
+                        width: 140,
+                        format: "{0:yyyy-MM-dd}",
+                        editor: function (container, options) {
+                            $('<input name="' + options.field + '"/>').appendTo(container).kendoDatePicker({
+                                format: "yyyy-MM-dd",
+                                min: new Date()
+                            });
+                        }
+                    },
+                    {
+                        field: "c_enddate",
+                        title: "End",
+                        width: 140,
+                        format: "{0:yyyy-MM-dd}",
+                        template: function (d) {
+                            return d.c_enddate ? kendo.toString(new Date(d.c_enddate), "yyyy-MM-dd") : "-";
+                        }
+                    },
+                    { command: ["edit", "destroy"], title: "Actions", width: 160 }
+                ]
+            }).data("kendoGrid");
+
+            // Apply status chip styling
+            function applyStatusChips() {
+                var gridData = $("#grid").data("kendoGrid");
+                if (!gridData) return;
+
+                var rows = gridData.dataSource.view();
+                var statusColumnIndex = gridData.thead.find("th").filter(function () {
+                    return $(this).text().trim() === "Status";
+                }).index();
+
+                if (statusColumnIndex < 0) return;
+
+                gridData.tbody.find("tr").each(function (index) {
+                    var rowData = rows[index];
+                    if (!rowData) return;
+
+                    var cell = $(this).children().eq(statusColumnIndex);
+                    var status = rowData.c_status || "Pending";
+                    var pillClass = (status === "Completed") ? "status-green" : "status-red";
+
+                    cell.html('<span class="status-pill ' + pillClass + '">' + kendo.htmlEncode(status) + '</span>');
+                });
+            }
+
+            // Auto-fit grid columns on layout change
+            @* function fixGridLayout() {
+                setTimeout(function () {
+                    var gridData = $("#grid").data("kendoGrid");
+                    if (gridData) {
+                        gridData.resize();
+                        try {
+                            for (var i = 0; i < gridData.columns.length; i++) {
+                                gridData.autoFitColumn(i);
+                            }
+                        } catch (ex) {
+                            // AutoFit column failed
+                        }
+                    }
+                }, 350);
+            } *@
+
+                @* $(window).on("resize", fixGridLayout); *@
+
+                // ========== CHANGE PASSWORD ==========
+                $("#changepwd-form").on("submit", function (e) {
+                    e.preventDefault();
+
+                    $.ajax({
+                        url: "/Employee/ChangePassword",
+                        method: "POST",
+                        data: {
+                            OldPassword: $("input[name='OldPassword']").val(),
+                            NewPassword: $("input[name='NewPassword']").val(),
+                            ConfirmPassword: $("input[name='ConfirmPassword']").val()
+                        },
+                        success: function (resp) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Success',
+                                text: resp.message || 'Password changed successfully.',
+                                timer: 1500,
+                                showConfirmButton: false
+                            });
+                            $("#changepwd-form")[0].reset();
+                        },
+                        error: function (xhr) {
+                            var msg = (xhr.responseJSON && xhr.responseJSON.error) || "Error changing password.";
+                            Swal.fire({ icon: 'error', title: 'Failed', text: msg });
+                        }
+                    });
+                });
+
+            // ========== PROFILE MANAGEMENT ==========
+            function getAbsoluteUrl(path) {
+                if (!path) return "";
+                if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("/")) return path;
+                return "/uploads/profiles/" + path;
+            }
+
+            function loadProfile() {
+                var employeeId = $("#empId").val();
+                if (!employeeId) return;
+
+                $.getJSON("/Employee/Profile", { id: employeeId })
+                    .done(function (resp) {
+                        var data = resp && resp.data ? resp.data : null;
+                        if (!data) return;
+
+                        $("input[name='c_email']").val(data.c_email || "");
+                        $("input[name='c_ename']").val(data.c_ename || "");
+                        if (data.c_profileimage) {
+                            $("#profile-preview").attr("src", getAbsoluteUrl(data.c_profileimage));
+                        }
+                    })
+                    .fail(function (xhr) {
+                        var msg = (xhr.responseJSON && xhr.responseJSON.error) || "Failed to load profile.";
+                        Swal.fire({ icon: 'error', title: 'Error', text: msg });
+                    });
+            }
+
+            function loadMiniProfile() {
+                var employeeId = $("#empId").val();
+                if (!employeeId) return;
+
+                $.getJSON("/Employee/Profile", { id: employeeId })
+                    .done(function (resp) {
+                        var data = resp && resp.data ? resp.data : null;
+                        if (!data) return;
+
+                        if (data.c_profileimage) {
+                            $("#profile-mini").attr("src", getAbsoluteUrl(data.c_profileimage));
+                        }
+                        if (data.c_ename) {
+                            $("#profile-name").text(data.c_ename);
+                        }
+                    });
+            }
+
+            // Load profile on page load
+            loadMiniProfile();
+
+            // Save profile changes
+            $("#profile-form").on("submit", function (e) {
+                e.preventDefault();
+                var employeeId = $("#empId").val();
+                if (!employeeId) return;
+
+                var formData = new FormData();
+                formData.append("c_ename", $("input[name='c_ename']").val().trim());
+
+                var fileInput = $("input[name='profilepicture']")[0];
+                if (fileInput && fileInput.files[0]) {
+                    formData.append("profilepicture", fileInput.files[0]);
+                }
+
+                var token = $('input[name="__RequestVerificationToken"]').val();
+                if (token) {
+                    formData.append("__RequestVerificationToken", token);
+                }
+
+                $.ajax({
+                    url: "/Employee/UpdateProfile?id=" + encodeURIComponent(employeeId),
+                    method: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (resp) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success',
+                            text: (resp && resp.message) ? resp.message : 'Profile updated successfully.',
+                            timer: 1500,
+                            showConfirmButton: false
+                        });
+
+                        // Update profile display
+                        if (resp && resp.data) {
+                            if (resp.data.c_ename) {
+                                $("#profile-name").text(resp.data.c_ename);
+                            }
+                            if (resp.data.c_profileimage) {
+                                var imageUrl = getAbsoluteUrl(resp.data.c_profileimage);
+                                $("#profile-preview").attr("src", imageUrl);
+                                $("#profile-mini").attr("src", imageUrl);
+                            }
+                        }
+                    },
+                    error: function (xhr) {
+                        var msg = (xhr.responseJSON && xhr.responseJSON.error) || "Failed to update profile.";
+                        Swal.fire({ icon: 'error', title: 'Error', text: msg });
+                    }
+                });
+            });
+
+            // ========== PASSWORD VISIBILITY TOGGLE ==========
+            $(document).on("click", ".password-toggle", function () {
+                var targetFieldName = $(this).data("target");
+                var inputField = $("input[name='" + targetFieldName + "']");
+
+                if (inputField.attr("type") === "password") {
+                    inputField.attr("type", "text");
+                    $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+                } else {
+                    inputField.attr("type", "password");
+                    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,78 @@
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\Users\asus\OneDrive\Documents\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\ventura\OneDrive\Desktop\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\Task Managment\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\asus\OneDrive\Documents\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\parth\OneDrive\Desktop\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\Acer\Downloads\final project (1)\final project\final project\WorkTrack\WorkTrack\WorkTrack\Repositories\obj\Debug\net8.0\ref\Repositories.dll

@@ -1,0 +1,204 @@
+@model Repositories.Models.vm_Login
+
+@{
+    ViewData["Title"] = "Employee Login";
+    
+}
+
+<!-- <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2024.2.514/styles/kendo.default-v2.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2024.2.514/js/kendo.all.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form_wrapper {
+        width: 400px;
+        margin: 80px auto;
+    }
+
+    .form_container {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 30px 40px;
+        position: relative;
+    }
+
+    .form_container::before {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #fcb900;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title_container {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .title_container h2 {
+        font-size: 22px;
+        color: #000;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    .input_field {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .input_field label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #444;
+    }
+
+    .input_field input[type="email"],
+    .input_field input[type="password"] {
+        width: 100%;
+        padding: 10px 35px 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    /* Eye icon */
+    .eye-icon {
+        position: absolute;
+        top: 37px;
+        right: 10px;
+        cursor: pointer;
+        color: #888;
+    }
+
+    #btnLogin {
+        width: 100%;
+        padding: 12px;
+        background-color: #fcb900;
+        border: none;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    #btnLogin:hover {
+        background-color: #ffcc33;
+    }
+
+    .k-invalid-msg {
+        color: red !important;
+        font-size: 13px;
+        margin-top: 5px;
+        display: block;
+    }
+</style>
+
+<div class="form_wrapper">
+    <div class="form_container">
+        <div class="title_container">
+            <h2>Login</h2>
+        </div>
+        <form id="loginForm" asp-action="Login" asp-controller="Home" method="post">
+            <div class="input_field">
+                <label>Email</label>
+                <input asp-for="c_email" id="c_email" />
+                <span asp-validation-for="c_email" class="text-danger"></span>
+            </div>
+
+            <div class="input_field">
+                <label>Password</label>
+                <input asp-for="c_password" id="c_password" type="password" />
+                <span asp-validation-for="c_password" class="text-danger"></span>
+            </div>
+
+
+
+            <button type="submit" id="btnLogin" class="btn btn-warning">Login</button>
+            <p style="text-align:center; margin-top:15px;">
+                Don’t have an account? <a asp-action="Register" asp-controller="Home">Register Here</a>
+            </p>
+
+        </form>
+
+
+    </div>
+</div>
+@section Scripts {
+
+
+    <script>
+        $(document).ready(function () {
+            $("#c_email, #c_password").kendoTextBox();
+
+            $("#loginForm").on("submit", function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: '@Url.Action("Login", "Home")',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            Swal.fire({
+                                icon: "success",
+                                text: "Login Successful!",
+                                showConfirmButton: false,
+                                timer: 1500
+                            }).then(() => {
+                                window.location.href = response.redirectUrl;
+                            });
+                        }
+                        else if (response.message === "Invalid Email or Password") {
+                            Swal.fire({
+                                icon: "error",
+                                text: response.message,
+                                showConfirmButton: false,
+                                timer: 3000
+                            });
+                        }
+                        else if (response.errors) {
+                            for (const [key, messages] of Object.entries(response.errors)) {
+                                const field = $(`[name="${key}"]`);
+                                const errorSpan = field.siblings("span.text-danger");
+                                if (errorSpan.length) {
+                                    errorSpan.text(messages.join(", "));
+                                }
+                            }
+                        }
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: "error",
+                            text: "Something went wrong. Please try again later.",
+                            showConfirmButton: false,
+                            timer: 1800
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <partial name="_ValidationScriptsPartial" />
+}

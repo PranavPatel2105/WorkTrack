@@ -1,0 +1,182 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full background image */
+body {
+    background: url('../images/people_banner.png') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Overlay */
+.overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Header */
+header {
+    padding: 25px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 55px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    animation: floatLogo 4s ease-in-out infinite;
+}
+
+.project-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFD700;
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    color: #FFD700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 14px 42px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.login-btn {
+   background: transparent;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+.login-btn:hover {
+    background: #FFD700;
+    color: #000;
+    transform: scale(1.07);
+}
+
+.register-btn {
+    background: transparent;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+.register-btn:hover {
+    background: #FFD700;
+    color: #000;
+    transform: scale(1.07);
+}
+
+/* Glowing effects */
+.glow-btn {
+    animation: glow 2.5s infinite alternate;
+}
+
+.glow-border {
+    animation: glow-border 2.5s infinite alternate;
+}
+
+/* Animations */
+@keyframes glow {
+    from { box-shadow: 0 0 10px rgba(255,215,0,0.3); }
+    to { box-shadow: 0 0 25px rgba(255,215,0,0.8); }
+}
+
+@keyframes glow-border {
+    from { box-shadow: 0 0 10px rgba(255,215,0,0.3); }
+    to { box-shadow: 0 0 25px rgba(255,215,0,0.8); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.05); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Fade-up animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.2s forwards;
+}
+
+.fade-up.delay-1 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        padding: 0 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-name {
+        font-size: 1.4rem;
+    }
+}
